@@ -23,3 +23,10 @@ class Intern(Employer):
     def display(self):
         super().display()
         print("Stipend:", self.salaire)
+
+# Polymorphisme
+Employers = [Employer("Benediction", 50000), Manageur("Ghodo", 70000, 10000), Intern("sarah", 20000)]
+
+for Employer in Employers:
+    Employer.display()
+    print(" personne suivant ")
