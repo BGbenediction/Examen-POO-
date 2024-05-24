@@ -16,3 +16,10 @@ class Manageur(Employer):
         super().display()
         print("Bonus:", self.bonus)
         
+class Intern(Employer):
+    def __init__(self, nom, stipend):
+        super().__init__(nom, stipend)
+        
+    def display(self):
+        super().display()
+        print("Stipend:", self.salaire)
