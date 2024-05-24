@@ -7,3 +7,12 @@ class Employer:
         print(f"Votre nom est:", self.nom)
         print(f"Votre salaire est de:", self.salaire)
         
+class Manageur(Employer):
+    def __init__(self, nom, salaire, bonus):
+        super().__init__(nom, salaire)
+        self.bonus = bonus
+        
+    def display(self):
+        super().display()
+        print("Bonus:", self.bonus)
+        
